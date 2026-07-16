@@ -19,19 +19,19 @@ window.KB_DATA = [
  },
  {
   "title": "MIC电路如何一个麦克风接到两路输入",
-  "html": "<p>可以作为并联输入</p>\n<p>连接思路：用一个偏置电压，然后分别串100NF电容连接到两个IC的输入，此电路只是理论上可以，具体效果需要打板后验证。</p>\n<p><img src=\"https://cdn.nlark.com/yuque/0/2026/png/64578082/1769599310371-9d71b2e2-a2f1-4b57-a693-d28f6ddaf0a0.png\" alt=\"\" /></p>",
+  "html": "<p>可以作为并联输入</p>\n<p>连接思路：用一个偏置电压，然后分别串100NF电容连接到两个IC的输入，此电路只是理论上可以，具体效果需要打板后验证。</p>\n<p><img src=\"assets/img-5fbf47d24d19.png\" alt=\"\" /></p>",
   "source": "CI-FAQ.md",
   "text": "可以作为并联输入 连接思路：用一个偏置电压，然后分别串100NF电容连接到两个IC的输入，此电路只是理论上可以，具体效果需要打板后验证。"
  },
  {
   "title": "3代PDM麦克风怎么接",
-  "html": "<p><img src=\"https://cdn.nlark.com/yuque/0/2026/png/64578082/1776224993311-90076c20-99d3-4c12-ba83-23bf6c617852.png\" alt=\"\" /></p>",
+  "html": "<p><img src=\"assets/img-582b86e2ec07.png\" alt=\"\" /></p>",
   "source": "CI-FAQ.md",
   "text": ""
  },
  {
   "title": "**模拟MEMS麦克风** 选用",
-  "html": "<p>模拟硅mic也是推荐选用-32dB±3dB，SNR≥65dB的，也可以选用-38dB±3dB，SNR≥65dB.</p>\n<p>推荐或在我司平台上查看：<a href=\"https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/\" target=\"_blank\" rel=\"noopener\">https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/</a></p>\n<p>参考电路，软件注意把麦克风改为单端输入。</p>\n<p><img src=\"https://cdn.nlark.com/yuque/0/2026/png/64578082/1780388234190-5475e193-7be7-4c96-8b12-a438100afa8f.png\" alt=\"\" /></p>",
+  "html": "<p>模拟硅mic也是推荐选用-32dB±3dB，SNR≥65dB的，也可以选用-38dB±3dB，SNR≥65dB.</p>\n<p>推荐或在我司平台上查看：<a href=\"https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/\" target=\"_blank\" rel=\"noopener\">https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/</a></p>\n<p>参考电路，软件注意把麦克风改为单端输入。</p>\n<p><img src=\"assets/img-03f7a7209d5d.png\" alt=\"\" /></p>",
   "source": "CI-FAQ.md",
   "text": "模拟硅mic也是推荐选用-32dB±3dB，SNR≥65dB的，也可以选用-38dB±3dB，SNR≥65dB. 推荐或在我司平台上查看：https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/ 参考电路，软件注意把麦克风改为单端输入。"
  },
@@ -55,7 +55,7 @@ window.KB_DATA = [
  },
  {
   "title": "HPOUT输出可以接两路功放输入吗？",
-  "html": "<p>理论上芯片HPOUT脚后端可以接多个功放输入端。但有以下问题发生，且目前无法处理，请根据提供电路进行搭建后测试确认是否使用。</p>\n<ol><li>音质受损：连接多个输入端后，可能引起<strong>音量降低、音质劣化</strong>或<strong>引入噪声</strong>等问题。</li><li>AEC打断率变低：连接多个功放后，AEC回路需要从每一个功放端连接反馈信号，电路复杂。与MIC识别到的声音有区别。造成AEC效果变差。</li></ol>\n<p>参考电路如下</p>\n<p><img src=\"https://cdn.nlark.com/yuque/0/2026/png/64578082/1783305193259-1869b549-e64b-4445-a05b-b84f3d19f139.png\" alt=\"\" /></p>",
+  "html": "<p>理论上芯片HPOUT脚后端可以接多个功放输入端。但有以下问题发生，且目前无法处理，请根据提供电路进行搭建后测试确认是否使用。</p>\n<ol><li>音质受损：连接多个输入端后，可能引起<strong>音量降低、音质劣化</strong>或<strong>引入噪声</strong>等问题。</li><li>AEC打断率变低：连接多个功放后，AEC回路需要从每一个功放端连接反馈信号，电路复杂。与MIC识别到的声音有区别。造成AEC效果变差。</li></ol>\n<p>参考电路如下</p>\n<p><img src=\"assets/img-5c46ba71d455.png\" alt=\"\" /></p>",
   "source": "CI-FAQ.md",
   "text": "理论上芯片HPOUT脚后端可以接多个功放输入端。但有以下问题发生，且目前无法处理，请根据提供电路进行搭建后测试确认是否使用。 1. 音质受损：连接多个输入端后，可能引起 音量降低、音质劣化 或 引入噪声 等问题。 2. AEC打断率变低：连接多个功放后，AEC回路需要从每一个功放端连接反馈信号，电路复杂。与MIC识别到的声音有区别。造成AEC效果变差。 参考电路如下"
  },
@@ -79,7 +79,7 @@ window.KB_DATA = [
  },
  {
   "title": "双MIC推荐",
-  "html": "<p>双MIC灵敏度要求在±1dB内指的是两个MIC的灵敏度差值，不是单个麦克风的灵敏度。</p>\n<p><img src=\"https://cdn.nlark.com/yuque/0/2026/png/64578082/1773284723084-abd12a05-dd4f-4e0e-ab15-64932fa4b174.png\" alt=\"\" /></p>\n<p>物料可找我们供应提供。我们官网有推荐的麦克风型号，可根据麦克风型号，要求麦克风厂做双MIC，两个灵敏度差值要求在±1dB</p>\n<p><a href=\"https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/\" target=\"_blank\" rel=\"noopener\">https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/</a></p>\n<p><img src=\"https://cdn.nlark.com/yuque/0/2026/png/64578082/1773284845977-8fd9871e-a968-47b4-8ce3-5b0fb95e5e19.png\" alt=\"\" /></p>",
+  "html": "<p>双MIC灵敏度要求在±1dB内指的是两个MIC的灵敏度差值，不是单个麦克风的灵敏度。</p>\n<p><img src=\"assets/img-f5574f34a01f.png\" alt=\"\" /></p>\n<p>物料可找我们供应提供。我们官网有推荐的麦克风型号，可根据麦克风型号，要求麦克风厂做双MIC，两个灵敏度差值要求在±1dB</p>\n<p><a href=\"https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/\" target=\"_blank\" rel=\"noopener\">https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/</a></p>\n<p><img src=\"assets/img-5fbf1600fc59.png\" alt=\"\" /></p>",
   "source": "CI-FAQ.md",
   "text": "双MIC灵敏度要求在±1dB内指的是两个MIC的灵敏度差值，不是单个麦克风的灵敏度。 物料可找我们供应提供。我们官网有推荐的麦克风型号，可根据麦克风型号，要求麦克风厂做双MIC，两个灵敏度差值要求在±1dB https://document.chipintelli.com/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%A4%96%E5%9B%B4%E5%99%A8%E4%BB%B6%E5%85%BC%E5%AE%B9%E5%88%97%E8%A1%A8/"
  },
@@ -91,7 +91,7 @@ window.KB_DATA = [
  },
  {
   "title": "CI103X-安静下HPOUT输出100-200khz，150mV（Vp-p）左右的锯齿波原因回复",
-  "html": "<p><img src=\"https://cdn.nlark.com/yuque/0/2026/png/64578082/1780127896930-fc232608-e7be-469e-bed9-e23d69123c26.png\" alt=\"\" /></p>\n<ul><li>原因为语音 IC 在完成播放操作后，软件未执行关闭芯片内部 Codec 中 DAC部分，导致 DAC 在空闲状态下仍处于工作状态，引入了一些噪声。</li><li>解决方案为软件播放完后关闭codec，这可能每次播放的时候，喇叭会有很轻微的pop的一声，不细声听不出来，或者HPOUT输出加一个RC滤波，电阻1K，对地电容10nF</li></ul>",
+  "html": "<p><img src=\"assets/img-6b1698a3d765.png\" alt=\"\" /></p>\n<ul><li>原因为语音 IC 在完成播放操作后，软件未执行关闭芯片内部 Codec 中 DAC部分，导致 DAC 在空闲状态下仍处于工作状态，引入了一些噪声。</li><li>解决方案为软件播放完后关闭codec，这可能每次播放的时候，喇叭会有很轻微的pop的一声，不细声听不出来，或者HPOUT输出加一个RC滤波，电阻1K，对地电容10nF</li></ul>",
   "source": "CI-FAQ.md",
   "text": "- 原因为语音 IC 在完成播放操作后，软件未执行关闭芯片内部 Codec 中 DAC部分，导致 DAC 在空闲状态下仍处于工作状态，引入了一些噪声。 - 解决方案为软件播放完后关闭codec，这可能每次播放的时候，喇叭会有很轻微的pop的一声，不细声听不出来，或者HPOUT输出加一个RC滤波，电阻1K，对地电容10nF"
  },
@@ -115,7 +115,7 @@ window.KB_DATA = [
  },
  {
   "title": "2. 射频关键元器件",
-  "html": "<table class=\"kb-table\">\n<tr><th>序号</th><th>关键件名称</th><th>型号</th><th>规格</th><th>图片</th><th>备注</th></tr>\n<tr><td>2</td><td>天线</td><td>板载天线</td><td>1. 尺寸：01J上规格 <br>2. 增益：（典型值 -0.5 dBi）  <br>3. 阻抗：50 Ω</td><td><img src=\"assets/Pasted image 20260715175029.png\" width=\"169\" /></td><td></td></tr>\n</table>",
+  "html": "<table class=\"kb-table\">\n<tr><th>序号</th><th>关键件名称</th><th>型号</th><th>规格</th><th>图片</th><th>备注</th></tr>\n<tr><td>2</td><td>天线</td><td>板载天线</td><td>1. 尺寸：01J上规格 <br>2. 增益：（典型值 -0.5 dBi）  <br>3. 阻抗：50 Ω</td><td><img src=\"assets/Pasted-image-20260715175029.png\" width=\"169\" /></td><td></td></tr>\n</table>",
   "source": "CI23242-认证相关说明.md",
   "text": "序号 关键件名称 型号 规格 图片 备注 --- ----- ---- ----------------------------------------------------- ----------------------------------------- --- 2 天线 板载天线 1. 尺寸：01J上规格 <br 2. 增益：（典型值 -0.5 dBi） <br 3. 阻抗：50 Ω"
  },
