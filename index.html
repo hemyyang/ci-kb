@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>CI 硬件技术支持知识库</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">CI</span>
+      <div>
+        <h1>硬件技术支持知识库</h1>
+        <p class="sub">CI 语音芯片 · FAQ 与问题处理</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="输入问题，如：3代PDM麦克风怎么接" autocomplete="off" />
+      <button id="clear" class="clear-btn" aria-label="清空" hidden>×</button>
+    </div>
+
+    <div id="filters" class="filters"></div>
+
+    <div id="results" class="results"></div>
+  </main>
+
+  <footer class="foot">
+    <span id="count"></span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
